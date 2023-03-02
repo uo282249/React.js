@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createMuiTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createMuiTheme({
+    palette: {
+        type: 'dark'
+    }
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -11,12 +11,19 @@ export default makeStyles()((theme) => ({
         height: '600px', display: 'flex', justifyContent: 'center', alignItems: 'center',
     },
     container: {
-        padding: '25px',
+        padding: '25px', maxHeight: '100px',
     },
     marginBottom: {
         marginBottom: '30px',
     },
     list: {
-        height: '75vh', overflow: 'auto',
+        overflow: 'auto', maxHeight: '500px',
+    },
+    paper: {
+        maxHeight: 400,
+        overflow: 'auto',
+        margin: 'auto',
+        width: '100%',
+        padding: theme.spacing(2),
     },
 }));

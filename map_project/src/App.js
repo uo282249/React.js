@@ -1,5 +1,6 @@
 import React from "react";
-import { CssBaseline, Grid } from "@material-ui/core";
+import CssBaseline from '@mui/material/CssBaseline';
+import Grid from '@mui/material/Grid';
 import './App.css';
 import Map from "./components/Map/Map";
 import Header from "./components/Header/Header";
@@ -12,14 +13,16 @@ function App() {
           <CssBaseline />
           <Header />
           <Grid container spacing={3} style={{ width: '100%' }}>
-            <Grid item xs={12} md={4}>
-                <List />
-            </Grid>
-            <Grid item xs={12} md={8}>
-              <Map />
-            </Grid>
-            </Grid>
+              <Grid item xs={12} md={4}> {/*for mobile, take up 12 columns, for desktop, take up 4 columns*/}
+                    <List />
+              </Grid>
+              <Grid item xs={12} md={8}> {/*for mobile, take up 12 columns, for desktop, take up 8 columns*/}
+                    <Map />
+              </Grid>
+          </Grid>
       </>
+
+
   );
 }
 
